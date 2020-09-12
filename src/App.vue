@@ -1,23 +1,15 @@
 <template>
-    <v-app>
-        <!-- Sizes your content based upon application components -->
-        <v-main>
-            <!-- Provides the application the proper gutter -->
-            <v-container fluid>
-                {{ test }}
-            </v-container>
-        </v-main>
-
-        <v-footer app>
-            <!-- -->
-        </v-footer>
-    </v-app>
+    <BasketballPlayground />
 </template>
 
 <script lang="ts">
 import { defineComponent } from '@vue/composition-api';
+import BasketballPlayground from './components/BasketballPlayground.vue';
 
 export default defineComponent({
+    components: {
+        BasketballPlayground,
+    },
     setup() {
         return {
             test: 'test',
